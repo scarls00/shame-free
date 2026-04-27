@@ -5,9 +5,8 @@ import Modal from './components/modal.jsx'
 function App() {
   return (
     <>
-      <Title />
-      <div className="todo__wrapper ">
       <h1>My To-do List</h1>
+      <div className="todo__wrapper ">
         <Todo />
         <Todo />
         <Todo />  
@@ -16,5 +15,8 @@ function App() {
     </>
   )
 }
+
+const [showModal, setShowModal] = useState(false);
+<Modal onClose={() => setShowModal(false)} />
 
 export default App
