@@ -1,10 +1,10 @@
 import './Todo.css'
 
-function Todo() {
+function Todo({ title }) {
     return (
       <div className="todo">    
-        <h2>Finish FES</h2>
-        <button>Completed</button>
+        <p>{ title }</p>
+        <button onClick={deleteTodo}>Delete</button>
       </div>
     )
 }
