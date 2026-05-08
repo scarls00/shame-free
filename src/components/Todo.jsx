@@ -1,10 +1,10 @@
 import './Todo.css'
 
-function Todo({ title }) {
+function Todo({ title, openModal }) {
     return (
       <div className="todo">    
         <p>{ title }</p>
-        <button onClick={deleteTodo}>Delete</button>
+        <button onClick={openModal}>Delete</button>
       </div>
     )
 }
